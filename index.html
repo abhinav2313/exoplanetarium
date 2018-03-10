@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exoplanetarium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="util.js"></script>
+    <script src="data.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- About Section -->
+    <div class="w3-row w3-padding-8" id="about">
+        
+        <div class="w3-col m6 w3-padding-smaller scroll-area_0">
+        </div>
+
+        
+
+        <div class="icon-bar" style="float:right"> 
+                <a class="active" href="javascript:menuBarHandler(desc);" id="desc"><i class="fa fa-home"></i></a> 
+                <a href="javascript:menuBarHandler(graphs);" id="graphs"><i class="fa fa-bar-chart"></i></a> 
+        </div>
+        <div class="w3-col m6 w3-padding-small w3-hide-small" id="home">
+
+        </div>
+
+        <div id='all' class="scroll-area">
+    
+        </div>
+
+        
+
+    </div>
+    <div class="w3-row scroll-area_1" id="table-row">
+        <div class="systemTable w3-col m3" id='star-table' style="">
+        </div>
+        <div class="systemTable w3-col m9" id='planet-table' style="">
+        </div>
+    </div>
+ 
+
+    <script src="plotGeneral.js"></script>
+    <script src="plotSpacial.js"></script>
+    <script src="data.js"></script>
+    <script src="planets.js"></script>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/WS5UxLHbUKc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</body>
+
+</html>
